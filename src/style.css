@@ -23,6 +23,10 @@ body {
   box-shadow: 0 2px 5px rgba(139, 134, 134, 0.8);
 }
 
+.icon {
+  color: #acadaf;
+}
+
 .div {
   height: 4rem;
   border-bottom: 1px solid rgba(139, 134, 134, 0.242);
