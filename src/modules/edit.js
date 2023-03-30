@@ -41,12 +41,11 @@ export function outclick() {
   const listner = (event) => {
     const label = document.querySelectorAll('.listlabel');
     const hide = document.querySelectorAll('.hide');
+    const icon = document.querySelectorAll('.jvicon');
     const index = Array.from(label).indexOf(this);
     hide[index].removeEventListener('click', remove);
     hide[index].removeEventListener('mouseleave', leave);
-    const icon = document.querySelectorAll('.jvicon');
     icon[index].removeEventListener('mouseenter', enter);
-
     if (event.target !== this) {
       const inputvalue = this.value;
       const index = Array.from(label).indexOf(this);
