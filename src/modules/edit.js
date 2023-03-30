@@ -27,13 +27,13 @@ export function edit(event) {
   if (event.key === 'Enter' || event.key === 'Escape') {
     const inputvalue = this.value;
     const index = Array.from(label).indexOf(event.target);
-    label[index].innerHTML = inputvalue;
-    tasks[index].description = label[index].innerHTML;
-    localStorage.setItem('array', JSON.stringify(tasks));
+    label[index].value = inputvalue;
     label[index].blur();
     const div = document.querySelectorAll('#style');
     div[index].style.backgroundColor = '#fff';
     this.style.backgroundColor = '#fff';
+    tasks[index].description = label[index].value;
+    localStorage.setItem('array', JSON.stringify(tasks));
   }
 }
 
@@ -50,8 +50,8 @@ export function outclick() {
     if (event.target !== this) {
       const inputvalue = this.value;
       const index = Array.from(label).indexOf(this);
-      label[index].innerHTML = inputvalue;
-      tasks[index].description = label[index].innerHTML;
+      label[index].value = inputvalue;
+      tasks[index].description = label[index].value;
       localStorage.setItem('array', JSON.stringify(tasks));
       const div = document.querySelectorAll('#style');
       div[index].style.backgroundColor = '#fff';
