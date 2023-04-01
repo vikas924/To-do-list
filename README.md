@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://vikas924.github.io/awesomebookses6/)
+- [Live Demo Link]( https://vikas924.github.io/To-do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
