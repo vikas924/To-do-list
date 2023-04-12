@@ -2,12 +2,10 @@ import './style.css';
 
 import { tasks, add } from './modules/add.js';
 
-import remove from './modules/remove.js';
-
 import status from './modules/status.js';
 
 import {
-  edit, outclick,
+  deletechild, edit, outclick,
 } from './modules/edit.js';
 
 function removecompleted() {
@@ -32,14 +30,7 @@ const displaytasks = () => {
   for (let i = 0; i < tasks.length; i += 1) {
     const icon = document.querySelectorAll('.jvicon');
     const hide = document.querySelectorAll('.hide');
-    hide[i].addEventListener('click', (event) => {
-      const button = document.querySelectorAll('.hide');
-      const index = Array.from(button).indexOf(event.target);
-      /* const parent = document.querySelector('.list');
-      const remo = e.target.parentNode;
-      parent.removeChild(remo); */
-      remove(index);
-    });
+    hide[i].addEventListener('click', deletechild);
     const input = document.querySelectorAll('.listlabel');
     input[i].addEventListener('keyup', edit);
     input[i].addEventListener('click', outclick);
