@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [To-do-list-interactive] <a name="about-project"></a>
+# 📖 [To-do-list-testing] <a name="about-project"></a>
 
-**[To-do-list-interactive]** In this project we created a jest test to test adding  and deleting function of our To-Do List project.
+**[To-do-list-testing]** In this project we created a jest test to test adding  and deleting function of our To-Do List project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
