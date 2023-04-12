@@ -24,7 +24,7 @@ const displaytasks = () => {
   const list = document.querySelector('.list');
   let items = '';
   for (let i = 0; i < tasks.length; i += 1) {
-    items += `<div id="style" class="div"><div class="listdiv"><input class="check" type="checkbox" name="${tasks[i].description}"><input class="listlabel style" for="${tasks[i].description}" value="${tasks[i].description}"></div><button class="jvicon delete"><i class="fa-solid fa-ellipsis-vertical" style="color: #acadaf"></i></button><button class="hide delete"><i class="fa-solid fa-trash-can"></i></button></div>`;
+    items += `<li id="style" class="div"><div class="listdiv"><input class="check" type="checkbox" name="${tasks[i].description}"><input class="listlabel style" for="${tasks[i].description}" value="${tasks[i].description}"></div><button class="jvicon delete"><i class="fa-solid fa-ellipsis-vertical" style="color: #acadaf"></i></button><button class="hide delete"><i class="fa-solid fa-trash-can"></i></button></li>`;
   }
   list.innerHTML = items;
   for (let i = 0; i < tasks.length; i += 1) {
