@@ -1,13 +1,8 @@
 import { tasks } from './add.js';
 
-export default function remove() {
-  const button = document.querySelectorAll('.hide');
-  const parent = document.querySelector('.list');
-  const index = Array.from(button).indexOf(this);
-  if ((tasks[index].completed) === true) {
-    const remo = this.parentNode;
-    parent.removeChild(remo);
-    tasks.splice(index, 1);
+export default function remove(indx) {
+  if ((tasks[indx].completed) === true) {
+    tasks.splice(indx, 1);
     for (let i = 0; i < tasks.length; i += 1) {
       tasks[i].index = i + 1;
     }

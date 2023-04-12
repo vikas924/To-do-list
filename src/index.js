@@ -32,7 +32,14 @@ const displaytasks = () => {
   for (let i = 0; i < tasks.length; i += 1) {
     const icon = document.querySelectorAll('.jvicon');
     const hide = document.querySelectorAll('.hide');
-    hide[i].addEventListener('click', remove);
+    hide[i].addEventListener('click', (event) => {
+      const button = document.querySelectorAll('.hide');
+      const index = Array.from(button).indexOf(event.target);
+      /* const parent = document.querySelector('.list');
+      const remo = e.target.parentNode;
+      parent.removeChild(remo); */
+      remove(index);
+    });
     const input = document.querySelectorAll('.listlabel');
     input[i].addEventListener('keyup', edit);
     input[i].addEventListener('click', outclick);
@@ -61,13 +68,18 @@ const displaytasks = () => {
 
 const addbutton = document.querySelector('.spanicon');
 const form = document.querySelector('.form');
-addbutton.addEventListener('click', add);
+addbutton.addEventListener('click', () => {
+  const input = document.querySelector('.addinput');
+  const value1 = input.value.trim();
+  add(value1);
+});
 addbutton.addEventListener('click', displaytasks);
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  add();
-  displaytasks();
   const input = document.querySelector('.addinput');
+  const value1 = input.value.trim();
+  add(value1);
+  displaytasks();
   input.value = '';
 });
 
