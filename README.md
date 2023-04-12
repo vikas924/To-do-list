@@ -32,7 +32,7 @@
 
 # 📖 [To-do-list-interactive] <a name="about-project"></a>
 
-**[To-do-list-interactive]** In this project i created to do list structure with added function for add,remove,edit,staus update for checked boxes and remove checked lists.
+**[To-do-list-interactive]** In this project we created a jest test to test adding  and deleting function of our To-Do List project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,6 +43,8 @@
 -JS
 
 -Webpack
+
+-Jest
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -64,9 +66,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[add to list]**
-- **[remove list]**
-- **[edit]**
+- **[Jest test to test adding function]**
+- **[Jest test to test removing function]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,13 +154,19 @@ GitHub Pages
 - Twitter: [@vikas410190](https://twitter.com/vikas410190)
 - LinkedIn: [Vikas Singh](https://www.linkedin.com/in/vikas-singh-586a07132/)
 
-<!-- FUTURE FEATURES -->
+## 👥 Authors <a name="authors"></a>
+
+👤 **Collins Bawa**
+
+- GitHub: [@vikas924](https://github.com/CaptainBawa)
+- Twitter: [@vikas410190](https://twitter.com/BawaCollins)
+- LinkedIn: [Vikas Singh](https://linkedin.com/in/linkedinhandle)
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add styes]**
-- [ ] **[animations]**
-- [ ] **[refresh]**
+- [ ] **[Add jest test for status function]**
+- [ ] **[Add jest test for complete function]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,7 +184,6 @@ If you like this project please follow me on github , twitter and also connect o
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -187,7 +193,6 @@ I would like to thank Microverse for this exercise.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
