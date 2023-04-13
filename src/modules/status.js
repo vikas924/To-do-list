@@ -7,7 +7,6 @@ export default function status() {
   const hide = document.querySelectorAll('.hide');
   const icon = document.querySelectorAll('.jvicon');
   let value = false;
-  // setTimeout(() => {
   if (this.checked === true) {
     value = true;
     tasks[index].completed = value;
@@ -26,4 +25,4 @@ export default function status() {
     hide[index].style.display = 'none';
     localStorage.setItem('array', JSON.stringify(tasks));
   }
-}// , 100);
+}
