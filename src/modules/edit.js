@@ -2,6 +2,15 @@ import { tasks } from './add.js';
 
 import remove from './remove.js';
 
+export function deletechild() {
+  const button = document.querySelectorAll('.hide');
+  const index = Array.from(button).indexOf(this);
+  const parent = document.querySelector('.list');
+  const remo = this.parentNode;
+  parent.removeChild(remo);
+  remove(index);
+}
+
 export function edit(event) {
   const label = document.querySelectorAll('.listlabel');
   if (event.key === 'Enter' || event.key === 'Escape') {
@@ -26,7 +35,7 @@ export function outclick() {
     const label = document.querySelectorAll('.listlabel');
     const hide = document.querySelectorAll('.hide');
     const index = Array.from(label).indexOf(this);
-    hide[index].removeEventListener('click', remove);
+    hide[index].removeEventListener('click', deletechild);
     if (event.target !== this) {
       const inputvalue = this.value;
       const index = Array.from(label).indexOf(this);
@@ -42,7 +51,7 @@ export function outclick() {
       hide[index].style.display = 'none';
       const list = document.querySelector('body');
       list.removeEventListener('click', listner);
-      setTimeout(hide[index].addEventListener('click', remove), 2000);
+      setTimeout(hide[index].addEventListener('click', deletechild), 2000);
     } else if (event.target === this) {
       const index = Array.from(label).indexOf(this);
       const div = document.querySelectorAll('#style');
