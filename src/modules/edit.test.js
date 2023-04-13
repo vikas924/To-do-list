@@ -7,8 +7,8 @@ import './__mocks__/mockHtml.js';
 import displaytasks from './display.js';
 
 import {
-  edit, listner,
-} from './mockedit.js';
+  edit, outclick,
+} from './edit.js';
 
 import { tasks } from './add.js';
 
@@ -48,22 +48,23 @@ describe('test edit ', () => {
   test('should edit task description', () => {
     displaytasks();
     const input = document.querySelectorAll('.listlabel');
-    const event = { target: `${input[0]}` };
-    input[2].value = 'hel';
-    listner.call(input[2], event);
-
+    input[1].value = 'hel';
+    outclick.call(input[1]);
+    const event = new MouseEvent('click');
+    const list = document.querySelector('body');
+    list.dispatchEvent(event);
     expect(input[1].value).toEqual(tasks[1].description);
   });
 
   test('should edit task description', () => {
     displaytasks();
     const input = document.querySelectorAll('.listlabel');
-    const event = { target: `${input[0]}` };
     input[0].value = 'he';
 
-    listner.call(input[0], event);
-    console.log(tasks);
-
+    outclick.call(input[0]);
+    const event = new MouseEvent('click');
+    const list = document.querySelector('body');
+    list.dispatchEvent(event);
     expect(input[0].value).toEqual(tasks[0].description);
   });
 });
