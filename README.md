@@ -154,19 +154,17 @@ GitHub Pages
 - Twitter: [@vikas410190](https://twitter.com/vikas410190)
 - LinkedIn: [Vikas Singh](https://www.linkedin.com/in/vikas-singh-586a07132/)
 
-## 👥 Authors <a name="authors"></a>
-
 👤 **Collins Bawa**
 
-- GitHub: [@vikas924](https://github.com/CaptainBawa)
-- Twitter: [@vikas410190](https://twitter.com/BawaCollins)
-- LinkedIn: [Vikas Singh](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@CaptainBawa](https://github.com/CaptainBawa)
+- Twitter: [@BawaCollins](https://twitter.com/BawaCollins)
+- LinkedIn: [Collins Bawa](https://linkedin.com/in/linkedinhandle)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add jest test for status function]**
-- [ ] **[Add jest test for complete function]**
+- [ ] **[Add animations]**
+- [ ] **[Add more functionalities]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
