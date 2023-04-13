@@ -20,6 +20,7 @@ jest.mock('./add', () => ({
   ],
 }));
 
+describe('test edit ', () => {
 test('should edit task description', () => {
   displaytasks();
   const input = document.querySelectorAll('.listlabel');
@@ -34,9 +35,35 @@ test('should edit task description', () => {
 test('should edit task description', () => {
   displaytasks();
   const input = document.querySelectorAll('.listlabel');
+  const event = { target: `${input[1]}` };
+  event.key = 'Enter';
+  input[2].value = 'hi';
+  edit.call(input[2], event);
+
+  expect(input[2].value).toEqual(tasks[2].description);
+});
+});
+
+describe('test edit ', () => {
+test('should edit task description', () => {
+  displaytasks();
+  const input = document.querySelectorAll('.listlabel');
   const event = { target: `${input[0]}` };
   input[2].value = 'hel';
   listner.call(input[2], event);
 
   expect(input[1].value).toEqual(tasks[1].description);
+});
+
+test('should edit task description', () => {
+  displaytasks();
+  const input = document.querySelectorAll('.listlabel');
+  const event = { target: `${input[0]}` };
+  input[0].value = 'he';
+  
+  listner.call(input[0], event);
+  console.log(tasks)
+
+  expect(input[0].value).toEqual(tasks[0].description);
+});
 });
